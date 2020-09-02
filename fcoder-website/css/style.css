@@ -3,7 +3,7 @@ html {
     background-repeat: no-repeat;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 nav {
-    padding: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
     background-color: blueviolet;
@@ -20,46 +20,48 @@ nav {
     font-weight: bold;
 }
 
-nav a {
+.options a {
     color: black;
     height: 20px;
+    padding-right: 60px;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: white;
     text-decoration: underline #40c6dd;
 }
 
-.button-in-home{
+.button-in-home {
     background: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-#login-button{
+#login-button {
     background: #a1abbe;
 }
-#login-button:hover{
+
+#login-button:hover {
     color: white;
 }
 
-#register-button{
+#register-button {
     background: #c3c5a8;
 }
 
-#register-button:hover{
+#register-button:hover {
     color: #c6d1e2;
     background: rgb(52, 101, 165);
 }
 
-.logo-img{
+.logo-img {
     width: 57.6px;
     height: 70.4px;
     background: url("../img/fc-logo.png") no-repeat;
@@ -69,45 +71,66 @@ button:hover{
     top: 8px;
 }
 
-.logo-frame{
+.logo-frame {
     width: 72px;
     height: 88px;
 }
 
-.logo-frame:hover{
+.logo-frame:hover {
     border-bottom: 4px solid;
 }
 
-.welcome-content{
-    background-color: rgb(228, 236, 117) ;
+.welcome-content {
+    background-color: rgb(228, 236, 117);
     width: 80vw;
-    margin: 130px auto 0 auto;
+    margin: 110px auto 0 auto;
     padding: 10px;
     text-align: center;
     font-family: sans-serif;
-    height: 800px;
 }
 
-#about-us{
+#about-us {
     background: rgb(228, 236, 117);
     width: 60vw;
     margin: 10px auto 0px auto;
-    height: 100px;
     text-align: center;
     padding: 10px;
+    padding-bottom: 50px;
 }
 
-#contact-us{
+#contact-us {
     background: #40c6dd;
     width: 40vw;
     margin: 10px auto 0px auto;
     padding: 10px;
 }
 
-#contact-us h2{
+#contact-us h2 {
     text-align: center;
 }
 
-#contact-us li{
+#contact-us li {
     padding-left: 80px;
+}
+
+@media all and (max-width: 750px) {
+    nav {
+        display: grid;
+    }
+    .options {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .options a {
+        padding-right: 20px;
+    }
+    .welcome-content {
+        margin: 150px auto 0 auto;
+    }
+    .btn-frame {
+        position: absolute;
+        top: 20px;
+        left: 70%;
+        display: grid;
+    }
 }
