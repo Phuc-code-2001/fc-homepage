@@ -1,0 +1,94 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(210, 167, 248);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .options{
+    width: 70vw;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options a {
+    padding: 8px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.options a:hover {
+    background-color: rgb(170, 165, 165);
+    color: #fff;
+    text-decoration: underline #40c6dd;
+}
+
+.btn-frame{
+    display: flex;
+}
+
+.btn-in-home {
+    background: none;
+    margin: 10px 0px;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#login-btn {
+    background: #ccd7eb;
+}
+
+#register-btn {
+    background: #e2e4d1;
+}
+
+#login-btn:hover,
+#register-btn:hover {
+    background-color: rgb(170, 165, 165);
+    color: white;
+}
+
+.logo-img {
+    background-image: url(../img/fc-logo-text.png);
+    background-size: cover;
+    height: 40px;
+    width: 160px;
+    margin: 10px 0;
+}
+
+@media all and (max-width: 530px) {
+    .welcome-content {
+        margin: 80px auto 0 auto;
+    }
+
+    nav{
+        display: grid;
+    }
+
+    .btn-frame{
+        position: absolute;
+        left: 60vw;
+    }
+}
