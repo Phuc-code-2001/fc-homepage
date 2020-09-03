@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style-home-page.css">
 </head>
 <body>
-    <div class="header">
+    <block class="header">
         <nav>
             <a href="./home.html" class="logo-frame">
                 <div class="logo-img"></div>
@@ -16,30 +16,41 @@
             <div class="options">
                 <a href="">Blog</a>
                 <a href="">Playground</a>
+                <a href="">Else</a>
                 <a href="#about-us">About</a>
                 <a href="#contact-us">Contact</a>
             </div>
 
             <div class="btn-frame">
-                <a href=""><button class="button-in-home" id="login-button">Log In</button></a>
-                <a href=""><button class="button-in-home" id="register-button">Join Us</button></a>
+                <a href=""><button class="btn-in-home" id="login-btn">Log In</button></a>
+                <a href=""><button class="btn-in-home" id="register-btn">Join Us</button></a>
             </div>
         </nav>
-    </div>
+    </block>
 
-    <div class="welcome-content">
-        <h1>Welcome-content</h1>
-    </div>
-
-    <div id="about-us">
-        <h2>About us</h2>
-    </div>
-
-    <div id="contact-us">
-        <h2>Contact us</h2>
-        <li>Facebook : </li>
-        <li>Email : </li>
-        <li>Hotline : </li>
-    </div>
+    <block class="content">
+        <div class="welcome-content">
+            <p>WELCOME TO FCODER</p>
+            <img src="./img/fc-logo.png" alt="">
+        </div>
+    
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p> About UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout Us
+                About UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout Us
+                AboutUsAbout UsAbout UsAbout UsAbout UsAbout UsAbout Us
+                About UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout</p>
+        </div>
+    
+        <div id="contact-us">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Facebook Group : Insert link at here</li>
+                <li>Email : </li>
+                <li>Hotline : </li>
+            </ul>
+            
+        </div>
+    </block>
 </body>
 </html>
